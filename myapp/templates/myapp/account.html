@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>My Account - UNICAFE</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #f7f7f7;
+      }
+
+      .container {
+        max-width: 700px;
+        margin: 80px auto;
+        background: white;
+        padding: 40px;
+        border-radius: 15px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        text-align: center;
+      }
+
+      h1 {
+        margin-bottom: 10px;
+      }
+
+      .username {
+        font-size: 22px;
+        font-weight: bold;
+        margin: 20px 0;
+      }
+
+      .back {
+        display: inline-block;
+        padding: 10px 20px;
+        background: #222;
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>My Account</h1>
+
+      <p>Welcome back!</p>
+
+      <div class="username">{{ user.username }}</div>
+
+      <p>You are logged in to UNICAFE.</p>
+
+      <a href="/" class="back"> Back to Home </a>
+    </div>
+  </body>
+</html>
